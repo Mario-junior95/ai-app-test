@@ -1,15 +1,31 @@
 # my-app
 
-To install dependencies:
+Monorepo with **client** and **server** packages. Git is managed at the repository root (not inside `packages/`).
+
+## Install
 
 ```bash
 bun install
 ```
 
-To run:
+## Run
 
 ```bash
-bun run index.ts
+# Server (http://localhost:8080)
+bun run dev:server
+
+# Client (calls the server)
+bun run dev:client
 ```
 
-This project was created using `bun init` in bun v1.3.14. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+## GitHub
+
+Push from the project root so the full app is on GitHub:
+
+```bash
+git add .
+git commit -m "your message"
+git push origin main
+```
+
+Remote: `https://github.com/Mario-junior95/ai-app-test.git`
